@@ -50,6 +50,17 @@
 //5 * 3 = 15
 //5 * 4 = 20
 
-
-// 4. Reverse the counting 
+// 4. Reverse the counting
 //  WAP to program to print the numbers from 10 to 1 with while loop
+
+// 5. Fizzbuzz
+// WAP to print the numbers from 1 to 50 but: print "fizz" for numbers divisible by 3,
+// print "buzz" if number divisible by 5, print "fizzbuzz" for numbers divisible by both 3 and 5, otherwise print the number
+// Output : 1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz....fizzbuzz
+
+// 6. WAP that takes an array of numbers and calculates the sum of all even numbers in an array...
+//[10, 15, 20, 25, 30]
+//output : 60
+
+//7. Palindrome ---> WAP to check if the number is palindrome or not(read the same forward and backward)..
+//Input: 121 -> palindrome,  124 -> not a palindromek
