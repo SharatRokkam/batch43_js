@@ -63,4 +63,4 @@
 //output : 60
 
 //7. Palindrome ---> WAP to check if the number is palindrome or not(read the same forward and backward)..
-//Input: 121 -> palindrome,  124 -> not a palindromek
+//Input: 121 -> palindrome,  124 -> not a palindrome
