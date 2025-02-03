@@ -46,7 +46,6 @@
 
 // Function Expression
 
-
 // const sum = function (a, b) {
 //   return a + b;
 // };
@@ -59,4 +58,8 @@ console.log(sum(5, 19));
 console.log(sum(5, 10));
 console.log(sum(5, 1));
 
+const multiplication = (a, b, c) => {
+  console.log(a * b * c);
+};
 
+multiplication(4, 5, 6);
