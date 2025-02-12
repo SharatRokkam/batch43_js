@@ -99,14 +99,26 @@ let products = [
 // let multipliedVal = sumOfNumber.reduce((acc, cur) => acc * cur, 1);
 // console.log(multipliedVal);
 
-let fruits = ["apple", "banana", "apple", "grapes", "banana", "apple", "kiwi"];
+let newName = "Guntur Kaaram";
+// Count the occurance of each Character in string
 
-const fruitCount = fruits.reduce((acc, fruit) => {
-  acc[fruit] = (acc[fruit] || 0) + 1;
-  return acc;
+let letterCount = newName.split("").reduce((acc, char) => {
+  if (char !== "") {
+    acc[char] = (acc[char] || 0) + 1;
+    return acc;
+  }
 }, {});
 
-console.log(fruitCount);
+console.log(letterCount);
+
+// let fruits = ["apple", "banana", "apple", "grapes", "banana", "apple", "kiwi"];
+
+// const fruitCount = fruits.reduce((acc, fruit) => {
+//   acc[fruit] = (acc[fruit] || 0) + 1;
+//   return acc;
+// }, {});
+
+// console.log(fruitCount);
 
 // {apple : 0, banana: 0, grapes : 0}
 // acc[fruit] = (acc[fruit] || 0) + 1;
@@ -122,4 +134,14 @@ console.log(fruitCount);
 // banana: 2
 // 2 || 0 + 1;
 //apple : 3
+
+// Calculate the sales for the day
+// let products = [400, 234, 30, 34, 500, 111]
+
+const users = [
+  { name: "Shiva", age: 28 },
+  { name: "Dattu", age: 30 },
+  { name: "Neha", age: 32 },
+  { name: "Shivani", age: 40 },
+];
 
