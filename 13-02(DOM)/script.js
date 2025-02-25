@@ -5,7 +5,7 @@
 // DOM stands for Document Object Model, which is an API that lets programs manipulate HTML and XML documents. It's a cross-platform, language-independent interface that treats documents as logical trees.
 
 // 1. getElementById
-// 2. getElementsByClass
+// 2. getElementsByClassName
 // 3. getElementsByTagname
 // 3. getElementsByName
 // 4. querySelector
@@ -28,18 +28,18 @@
 //   body.style.backgroundColor = "";
 // }
 
-let white = document.getElementById("white");
-let black = document.getElementById("black");
-let body = document.getElementById("body");
-let bgBlack = document.getElementById("bg-black");
+// let white = document.getElementById("white");
+// let black = document.getElementById("black");
+// let body = document.getElementById("body");
+// let bgBlack = document.getElementById("bg-black");
 
 
-white.addEventListener("click", () => {
-  body.style.backgroundColor = "white";
-  bgBlack.style.color = "blue";
-});
+// white.addEventListener("click", () => {
+//   body.style.backgroundColor = "white";
+//   bgBlack.style.color = "blue";
+// });
 
-black.addEventListener("click", () => {
-  bgBlack.style.color = "white";
-  body.style.backgroundColor = "black";
-});
+// black.addEventListener("click", () => {
+//   bgBlack.style.color = "white";
+//   body.style.backgroundColor = "black";
+// });

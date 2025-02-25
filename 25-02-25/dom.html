@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        div {
+            height: 80px;
+            width: 80px;
+            border: 1px solid pink;
+
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #blue {
+            background-color: blue;
+        }
+
+        #black {
+            background-color: black;
+        }
+
+        #green {
+            background-color: green;
+        }
+
+        #yellow {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="red" class="buttons"></div>
+    <div id="yellow" class="buttons"></div>
+    <div id="blue" class="buttons"></div>
+    <div id="green" class="buttons"></div>
+    <div id="black" class="buttons"></div>
+
+
+    <script>
+        // let red = document.querySelector("#red")
+        // let yellow = document.querySelector("#yellow")
+        // let blue = document.querySelector("#blue")
+        // let green = document.querySelector("#green")
+        // let black = document.querySelector("#black")
+        // let body = document.querySelector("body")
+
+
+        // red.addEventListener("click", () => {
+        //     body.style.backgroundColor = "red"
+        // })
+        // blue.addEventListener("click", () => {
+        //     body.style.backgroundColor = "blue"
+        // })
+        // green.addEventListener("click", () => {
+        //     body.style.backgroundColor = "green"
+        // })
+        // black.addEventListener("click", () => {
+        //     body.style.backgroundColor = "black"
+        // })
+        // yellow.addEventListener("click", () => {
+        //     body.style.backgroundColor = "yellow"
+        // })
+
+
+        // DONT repeat yourself
+        let buttons = document.querySelectorAll(".buttons");
+        let body = document.querySelector("body");
+        buttons.forEach((button) => {
+            button.addEventListener("mouseover", () => {
+                body.style.backgroundColor = button.id;
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>
