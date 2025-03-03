@@ -18,13 +18,15 @@
         div.className = "main"
         div.id = Math.floor(Math.random() * 10 + 1)
         div.setAttribute("class", "main generated title")
-        div.innerText = "Learning DOM"
+        // div.innerText = "Learning DOM"
         div.style.color = "blue"
-        // let addText = document.createTextNodes("Learning DOM")
+        const addText = document.createTextNode("Learning DOM")
+
+        div.appendChild(addText)
 
         // div.appendChild(a)
 
-        document.body.div.appendChild(div)
+        document.body.appendChild(div)
 
     </script>
 </body>

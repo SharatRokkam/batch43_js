@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul class="language">
+       
+    </ul>
+
+    <!-- <script src="./script.js"></script> -->
+    <script>
+
+
+        // function addLanguage(langName) {
+        //     const li = document.createElement("li");
+        //     li.innerHTML = `${langName}`
+        //     document.querySelector(".language").appendChild(li)
+        // }
+
+        // addLanguage("Python")
+        // addLanguage("TypeScript")
+
+        //traversing each and every element and then adds the value to the end of the ul
+
+
+        function addOptimalLang(langName) {
+            const li = document.createElement("li")
+
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector(".language").appendChild(li)
+        }
+
+        addOptimalLang("Python")
+        addOptimalLang("Typescript")
+        addOptimalLang("Java")
+
+
+        // Edit 
+        const secondLang = document.querySelector("li:nth-child(2)")
+        // console.log(secondLang);
+        // secondLang.innerHTML = "Ruby on Rails"
+
+        const newLi = document.createElement("li")
+        newLi.textContent = "GoLang"
+        secondLang.replaceWith(newLi)
+
+        // Edit 
+        const lastElement = document.querySelector("li:last-child")
+        // console.log(lastElement.innerHTML);
+        lastElement.outerHTML = "<li>.Net</li>"
+        // lastElement.outerHTML = "NOthing"
+        // remove 
+        const typeScript = document.querySelector("li:nth-child(3)")
+        // console.log(typeScript.innerHTML);
+        typeScript.remove()
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
