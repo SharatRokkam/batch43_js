@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(100%);
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        button {
+            width: 70px;
+            font-size: 24px;
+            /* opacity: 0.5; */
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <h2>0</h2>
+        </div>
+
+        <div>
+            <button id="plsBtn">+</button>
+            <button id="minusBtn">-</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+    
+</body>
+
+</html>
