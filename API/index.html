@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #postContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .divContainer {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            width: 300px;
+            /* gap: 20px; */
+            justify-content: space-evenly;
+            margin: 20px 20px;
+            text-align: center;
+
+        }
+
+        img {
+            height: 100px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Click to Fetch Data from API</h2>
+    <button onclick="fetchData()">Click ME!</button>
+
+
+    <div class="container" id="postContainer"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
