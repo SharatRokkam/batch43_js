@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+
+        button {
+            width: 96%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter username">
+            <div class="error" id="usernameError"></div>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <div class="error" id="passwordError"></div>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" placeholder="Enter phone number">
+            <div class="error" id="phoneError"></div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let phone = document.getElementById("phone").value;
+
+            let usernameRegex = /^[a-zA-Z0-9]{3,15}$/;
+            let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            let phoneRegex = /^[0-9]{10}$/;
+
+            let isValid = true;
+
+            // Validate Username
+            if (!usernameRegex.test(username)) {
+                document.getElementById("usernameError").innerText = "Username must be 3-15 alphanumeric characters.";
+                isValid = false;
+            } else {
+                document.getElementById("usernameError").innerText = "";
+            }
+
+            // Validate Password
+            if (!passwordRegex.test(password)) {
+                document.getElementById("passwordError").innerText = "Password must be at least 8 characters, include uppercase, lowercase, number, and special character.";
+                isValid = false;
+            } else {
+                document.getElementById("passwordError").innerText = "";
+            }
+
+            // Validate Phone Number
+            if (!phoneRegex.test(phone)) {
+                document.getElementById("phoneError").innerText = "Phone number must be exactly 10 digits.";
+                isValid = false;
+            } else {
+                document.getElementById("phoneError").innerText = "";
+            }
+
+            // If valid, submit the form (for now, just alert success)
+            if (isValid) {
+                alert("Form submitted successfully!");
+                document.getElementById("registrationForm").reset();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

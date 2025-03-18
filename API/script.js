@@ -49,7 +49,7 @@ async function fetchData() {
     const container = document.getElementById("postContainer");
     container.innerHTML = "";
 
-    data.slice(4, 15).forEach((product) => {
+    data.forEach((product) => {
       const myData = document.createElement("div");
       myData.setAttribute("class", "divContainer");
       myData.innerHTML = `
@@ -64,3 +64,32 @@ async function fetchData() {
     console.log("error occured");
   }
 }
+
+// function fetchData() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("Data fetched from server");
+//     }, 2000);
+//   });
+// }
+
+// async function handleData() {
+//   const data = await fetchData();
+//   console.log(data);
+//   console.log("Processing data...");
+// }
+
+// async function handleData() {
+//   try {
+//     const data = await fetchData();
+//     console.log(data);
+//     console.log("Processing data...");
+//     console.log("Displaying data...");
+//   } catch (error) {
+//     console.error("Error:", error);
+//   } finally {
+//     console.log("helo");
+//   }
+// }
+
+// handleData();
