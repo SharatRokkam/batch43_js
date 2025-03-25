@@ -78,12 +78,25 @@
 
 // User1("Male");
 
-function Student(name) {
-  this.name = name;
-  console.log(`${this.name}`);
-}
+// function Student(name) {
+//   this.name = name;
+//   console.log(`${this.name}`);
+// }
 
-let student1 = Student("John");
-let student2 = Student("J");
-let student3 = Student("Mon");
-let student4 = Student("Con");
+// let student1 = Student("John");
+// let student2 = Student("J");
+// let student3 = Student("Mon");
+// let student4 = Student("Con");
+
+// const element = document.getElementById("box");
+
+// element.classList.add("new");
+// console.log(element);
+// element.classList.remove("new");
+// console.log(element);
+
+// element.classList.replace("new", "old");
+// console.log(element);
+
+
+// Append and AppendChild
