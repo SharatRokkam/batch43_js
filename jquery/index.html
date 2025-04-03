@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+
+    <style>
+        div {
+            border: 1px solid;
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <h2 id="heading2">Hello jquery</h2> -->
+
+    <div id="test1">
+        <h1>Hello World</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nulla distinctio sit aliquam nihil sed ipsam
+            explicabo dolore doloribus minus.</p>
+    </div>
+
+    <!-- <div id="test2">
+        <h1>Hello Jquery</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nulla distinctio sit aliquam nihil sed ipsam
+            explicabo dolore doloribus minus.</p>
+    </div> -->
+
+
+    <!-- <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul> -->
+
+
+    <!-- <script src="./jquery.js"></script> -->
+
+    <script>
+
+        // $(selector).action()
+
+        // const h2 = document.querySelector("h2")
+        // console.log(h2.innerHTML)
+
+        // $(document).ready(function () {
+        //     // let h2 = $("#heading2").html()
+        //     // console.log(h2)
+        //     alert(1)
+        // })
+
+
+        // $(document).ready(() => {
+        //     // let value = $("#test1").html()
+        //     // console.log(value)
+
+        //     // let value1 = $("#test2").html();
+        //     // console.log(value1);
+
+
+        //     // $("li").css("color", "red")
+
+        //     $("li:nth-child(3)").css("color", "blue ")
+        //     $("li:first-child()").css("border", "1px solid blue")
+        //     $("*").css("color", "purple")
+        //     $("*").css("border", "1px solid red")
+
+
+        // })
+
+
+
+        $(document).ready(() => {
+            $("#test1").click(() => {
+                $("#test1").css("background-color", "red")
+
+            });
+
+            $("#test1").dblclick(() => {
+                $("#test1").css("background-color", "blue")
+
+            })
+
+            $("#test1").contextmenu(() => {
+                $("#test1").css("background-color", "tan")
+
+            })
+
+            $("#test1").mouseenter(() => {
+                $("#test1").css("background-color", "purple")
+
+            })
+
+            $("#test1").mouseleave(() => {
+                $("#test1").css("background-color", "green")
+
+            })
+
+
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>
