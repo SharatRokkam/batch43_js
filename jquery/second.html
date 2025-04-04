@@ -7,13 +7,28 @@
     <title>Document</title>
 
     <style>
-        #animate {
+        /* #animate {
             width: 100px;
             height: 100px;
             border: 1px solid black;
             background-color: antiquewhite;
             margin: 10px;
             position: absolute;
+        } */
+
+        #ball {
+            width: 60px;
+            height: 60px;
+            background-color: crimson;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        button {
+            margin-top: 100px;
         }
     </style>
 </head>
@@ -28,7 +43,11 @@
     <button id="fadeIn">fadeIN</button>
     <button id="fadeOut">fadeOut</button> -->
 
-    <div id="animate"></div>
+    <!-- <div id="animate"></div>
+    <button>Animate</button> -->
+
+
+    <div id="ball"></div>
     <button>Animate</button>
 
 
@@ -58,9 +77,24 @@
         // })
 
 
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         $("#animate").animate({ left: "100px", backgroundColor: "blue" }, 800)
+        //     })
+        // })
+
+
+
         $(document).ready(function () {
             $("button").click(function () {
-                $("#animate").animate({ left: "100px", backgroundColor: "blue" })
+                $("#ball")
+                    .animate({ top: "300px" }, 600, "swing")
+                    .animate({ left: "300px", backgroundColor: "green" }, 800)
+                    .animate({ top: "0px" }, 600)
+                    .animate({ left: "300px", backgroundColor: "purple" }, 800)
+                    .animate({ width: "100px", height: "100px" }, 500)
+                    .animate({ width: "60px", height: "60px" }, 500)
+
             })
         })
 
