@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #animate {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: antiquewhite;
+            margin: 10px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <p id="text">Hi, I can be hidden</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button> -->
+
+
+    <!-- <p id="text">Hi, I can be hidden</p>
+    <button id="fadeIn">fadeIN</button>
+    <button id="fadeOut">fadeOut</button> -->
+
+    <div id="animate"></div>
+    <button>Animate</button>
+
+
+
+    <script src="./jquery.js"></script>
+    <script>
+        // $(document).ready(function () {
+        //     $("#hide").click(function () {
+        //         $("#text").hide()
+        //     })
+
+
+        //     $("#show").click(function(){
+        //         $("#text").show()
+        //     })
+        // })
+
+        // $(document).ready(function () {
+        //     $("#fadeIn").click(function () {
+        //         $("#text").fadeIn()
+        //     })
+
+
+        //     $("#fadeOut").click(function(){
+        //         $("#text").fadeOut()
+        //     })
+        // })
+
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#animate").animate({ left: "100px", backgroundColor: "blue" })
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>
